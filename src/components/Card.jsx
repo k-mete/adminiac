@@ -27,22 +27,22 @@ const Card = ({
     large: 'p-6',
   };
 
-  const borderClass = border ? 'border border-gray-200' : '';
+  const borderClass = border ? 'border border-accent/20' : '';
 
   return (
     <div
-      className={`bg-white rounded-lg ${shadowClasses[shadow]} ${borderClass} ${className}`}
+      className={`bg-background rounded-lg ${shadowClasses[shadow]} ${borderClass} ${className}`}
       {...rest}
     >
       {(title || subtitle) && (
-        <div className={`border-b border-gray-200 ${paddingClasses[padding]}`}>
+        <div className={`border-b border-accent/20 ${paddingClasses[padding]}`}>
           {title && (
-            <h3 className="text-lg font-medium leading-6 text-gray-900">
+            <h3 className="text-lg font-medium leading-6 text-text">
               {title}
             </h3>
           )}
           {subtitle && (
-            <p className="mt-1 text-sm text-gray-500">
+            <p className="mt-1 text-sm text-accent">
               {subtitle}
             </p>
           )}
@@ -54,7 +54,7 @@ const Card = ({
       </div>
 
       {footer && (
-        <div className={`border-t border-gray-200 ${paddingClasses[padding]}`}>
+        <div className={`border-t border-accent/20 ${paddingClasses[padding]}`}>
           {footer}
         </div>
       )}

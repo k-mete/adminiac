@@ -8,6 +8,12 @@ export const ROUTES = {
   HOME: '/',
   DASHBOARD: '/dashboard',
   ABOUT: '/about',
+  SERVICES: '/services',
+  TEAM: '/team',
+  PORTFOLIO: '/portfolio',
+  BLOG: '/blog',
+  FAQ: '/faq',
+  PRICING: '/pricing',
   CONTACT: '/contact',
 };
 
@@ -19,14 +25,44 @@ export const MAIN_NAVIGATION = [
     icon: 'home',
   },
   {
-    name: 'Dashboard',
-    path: ROUTES.DASHBOARD,
-    icon: 'dashboard',
+    name: 'Services',
+    path: ROUTES.SERVICES,
+    icon: 'briefcase',
+  },
+  {
+    name: 'Portfolio',
+    path: ROUTES.PORTFOLIO,
+    icon: 'collection',
   },
   {
     name: 'About',
     path: ROUTES.ABOUT,
     icon: 'info',
+  },
+  {
+    name: 'Team',
+    path: ROUTES.TEAM,
+    icon: 'users',
+  },
+  {
+    name: 'Blog',
+    path: ROUTES.BLOG,
+    icon: 'document-text',
+  },
+  {
+    name: 'Pricing',
+    path: ROUTES.PRICING,
+    icon: 'currency-dollar',
+  },
+  {
+    name: 'FAQ',
+    path: ROUTES.FAQ,
+    icon: 'question-mark-circle',
+  },
+  {
+    name: 'Dashboard',
+    path: ROUTES.DASHBOARD,
+    icon: 'dashboard',
   },
   {
     name: 'Contact',
@@ -37,16 +73,23 @@ export const MAIN_NAVIGATION = [
 
 // Footer navigation items
 export const FOOTER_LINKS = {
-  quickLinks: [
+  company: [
     { name: 'Home', path: ROUTES.HOME },
-    { name: 'Dashboard', path: ROUTES.DASHBOARD },
     { name: 'About', path: ROUTES.ABOUT },
+    { name: 'Team', path: ROUTES.TEAM },
     { name: 'Contact', path: ROUTES.CONTACT },
   ],
+  services: [
+    { name: 'Services', path: ROUTES.SERVICES },
+    { name: 'Portfolio', path: ROUTES.PORTFOLIO },
+    { name: 'Pricing', path: ROUTES.PRICING },
+    { name: 'Dashboard', path: ROUTES.DASHBOARD },
+  ],
   resources: [
+    { name: 'Blog', path: ROUTES.BLOG },
+    { name: 'FAQ', path: ROUTES.FAQ },
     { name: 'React Documentation', url: 'https://reactjs.org' },
     { name: 'Tailwind CSS', url: 'https://tailwindcss.com' },
-    { name: 'React Router', url: 'https://reactrouter.com' },
   ],
   social: [
     { name: 'Twitter', url: 'https://twitter.com', icon: 'twitter' },

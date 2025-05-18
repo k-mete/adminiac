@@ -29,6 +29,10 @@
     @apply bg-secondary text-white hover:bg-secondary/90;
   }
 
+  .btn-accent {
+    @apply bg-accent text-white hover:bg-accent/90;
+  }
+
   .container-custom {
     @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
   }

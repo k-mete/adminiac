@@ -29,7 +29,7 @@ const HomePage = () => {
                 <Button
                   variant="outline"
                   size="lg"
-                  className="bg-white/10 border-white text-white font-semibold hover:bg-white/20"
+                  className="bg-accent/10 border-accent text-accent font-semibold hover:bg-accent/20"
                 >
                   Explore Dashboard
                 </Button>
@@ -43,7 +43,7 @@ const HomePage = () => {
       <section>
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold mb-4">Key Features</h2>
-          <p className="text-gray-600 max-w-2xl mx-auto">
+          <p className="text-accent max-w-2xl mx-auto">
             Everything you need to build modern React applications
           </p>
         </div>
@@ -54,7 +54,7 @@ const HomePage = () => {
             subtitle="Modern tech stack for rapid development"
             className="h-full"
           >
-            <p className="text-gray-600">
+            <p className="text-accent">
               Built with React and Tailwind CSS for a powerful and flexible development experience.
             </p>
           </Card>
@@ -64,7 +64,7 @@ const HomePage = () => {
             subtitle="Looks great on all devices"
             className="h-full"
           >
-            <p className="text-gray-600">
+            <p className="text-accent">
               Fully responsive layout that works perfectly on desktop, tablet, and mobile devices.
             </p>
           </Card>
@@ -74,7 +74,7 @@ const HomePage = () => {
             subtitle="Reusable UI components"
             className="h-full"
           >
-            <p className="text-gray-600">
+            <p className="text-accent">
               A collection of reusable components to help you build your application faster.
             </p>
           </Card>
@@ -82,11 +82,11 @@ const HomePage = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="bg-gray-100 rounded-lg p-8 md:p-12 text-center">
+      <section className="bg-primary/10 rounded-lg p-8 md:p-12 text-center">
         <h2 className="text-2xl md:text-3xl font-bold mb-4">
           Ready to get started?
         </h2>
-        <p className="text-gray-600 mb-8 max-w-2xl mx-auto">
+        <p className="text-accent mb-8 max-w-2xl mx-auto">
           Start building your next project with AdminIAC today.
         </p>
         <Link to="/dashboard">
