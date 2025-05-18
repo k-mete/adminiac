@@ -145,8 +145,6 @@ const Header = () => {
               : 'text-accent hover:text-primary hover:bg-primary/5'
           }`}
           onClick={() => toggleDropdown(group)}
-          onMouseEnter={() => setActiveDropdown(group)}
-          onMouseLeave={() => setActiveDropdown(null)}
         >
           {title}
           <svg
@@ -161,11 +159,9 @@ const Header = () => {
 
         {/* Desktop Dropdown */}
         <div
-          className={`absolute left-0 mt-2 w-48 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 transition-opacity duration-150 z-10 ${
-            isOpen ? 'opacity-100' : 'opacity-0 invisible group-hover:opacity-100 group-hover:visible'
+          className={`absolute left-0 mt-2 w-48 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 transition-all duration-150 z-10 ${
+            isOpen ? 'opacity-100 visible' : 'opacity-0 invisible'
           }`}
-          onMouseEnter={() => setActiveDropdown(group)}
-          onMouseLeave={() => setActiveDropdown(null)}
         >
           <div className="py-1">
             {navGroups[group].map(name => (
@@ -177,6 +173,7 @@ const Header = () => {
                     ? 'text-primary font-medium bg-primary/10'
                     : 'text-accent hover:text-primary hover:bg-primary/5'
                 }`}
+                onClick={() => setActiveDropdown(null)}
               >
                 {name}
               </Link>

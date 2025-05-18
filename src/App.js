@@ -18,6 +18,10 @@ import PricingPage from './pages/PricingPage';
 import ContactPage from './pages/ContactPage';
 import NotFoundPage from './pages/NotFoundPage';
 
+// CRUD Pages
+import UsersPage from './pages/UsersPage';
+import ProductsPage from './pages/ProductsPage';
+
 function App() {
   return (
     <Router>

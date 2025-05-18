@@ -15,6 +15,13 @@ export const ROUTES = {
   FAQ: '/faq',
   PRICING: '/pricing',
   CONTACT: '/contact',
+  // CRUD routes
+  USERS: '/dashboard/users',
+  USERS_CREATE: '/dashboard/users/create',
+  USERS_EDIT: '/dashboard/users/edit',
+  PRODUCTS: '/dashboard/products',
+  PRODUCTS_CREATE: '/dashboard/products/create',
+  PRODUCTS_EDIT: '/dashboard/products/edit',
 };
 
 // Main navigation items
@@ -104,6 +111,16 @@ export const DASHBOARD_NAVIGATION = [
     name: 'Overview',
     path: ROUTES.DASHBOARD,
     icon: 'dashboard',
+  },
+  {
+    name: 'Users',
+    path: ROUTES.USERS,
+    icon: 'users',
+  },
+  {
+    name: 'Products',
+    path: ROUTES.PRODUCTS,
+    icon: 'collection',
   },
   {
     name: 'Analytics',
